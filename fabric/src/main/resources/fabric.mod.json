@@ -12,7 +12,7 @@
     "sources": ""
   },
   "license": "${license}",
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "client": [
     ]
