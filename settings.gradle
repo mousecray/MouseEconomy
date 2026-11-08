@@ -48,3 +48,11 @@ rootProject.name = 'MouseEconomy'
 include("common")
 include("fabric")
 include("forge")
+
+includeBuild('../Mousecore') {
+    dependencySubstitution {
+        substitute module('ru.mousecray.mousecore:mousecore-common') using project(':common')
+        substitute module('ru.mousecray.mousecore:mousecore-forge') using project(':forge')
+        substitute module('ru.mousecray.mousecore:mousecore-fabric') using project(':fabric')
+    }
+}
