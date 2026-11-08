@@ -1,10 +1,33 @@
 # eclipse
-bin
+bin/
 *.launch
-.settings
-.metadata
+.settings/
+.metadata/
 .classpath
 .project
+eclipse/
+
+# idea artifacts
+/out/
+*.ipr
+*.iws
+*.iml
+.idea/*
+!.idea/scopes/
+
+# gradle build output
+.gradle/
+/build/
+/*/build/
+/buildSrc/build/
+
+# run dirs
+/run/
+/runs/
+/run-data/
+/*/run/
+/*/runs/
+/*/run-data/
 
 # SigMap & AI context
 /.contextignore
@@ -15,27 +38,4 @@ bin
 /.context/
 /gemini-context.md
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea/*
-!.idea/scopes
-
-# gradle
-/build/
-/buildSrc/build/
-/common/build/
-/forge/build/
-/fabric/build/
-.gradle
-
-# other
-eclipse
-run
-runs
-/forge/run/
-/forge/runs/
-/fabric/run/
-/fabric/runs/
+!**/src/**
