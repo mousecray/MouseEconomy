@@ -6,6 +6,14 @@ bin
 .classpath
 .project
 
+# SigMap & AI context
+/.contextignore
+/gen-context.config.json
+/CLAUDE.md
+/AGENTS.md
+/.github/
+/.context/
+
 # idea
 out
 *.ipr
@@ -15,10 +23,18 @@ out
 !.idea/scopes
 
 # gradle
-build
+/build/
+/buildSrc/build/
+/common/build/
+/forge/build/
+/fabric/build/
 .gradle
 
 # other
 eclipse
 run
 runs
+/forge/run/
+/forge/runs/
+/fabric/run/
+/fabric/runs/
